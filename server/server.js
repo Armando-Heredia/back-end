@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(corse());
+app.use(cors());
 
 app.get('/', function (req, res) {
     res.send('<h1>Bienvenido a mi servidor REST (localhost)</h1>');
@@ -22,7 +22,7 @@ app.use(require('./routes/categoria'));
 app.use(require('./routes/login'));
 app.use(require('./routes/productos'));
 
-mongoose.connect('mongodb+srv://admin:123456789zZ@cluster0.rociy.mongodb.net/cafeteria',{
+mongoose.connect('mongodb+srv://admin:armiheram@cluster0.wbvd5.mongodb.net/cafeteria',{
 
   useNewUrlParser: true,
   useUnifiedTopology: true,
